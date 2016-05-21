@@ -1,0 +1,206 @@
+\documentclass[12pt,a4paper,titlepage,headinclude,bibtotoc]{scrartcl}
+
+%---- Allgemeine Layout Einstellungen ------------------------------------------
+
+% Für Kopf und Fußzeilen, siehe auch KOMA-Skript Doku
+\usepackage[komastyle]{scrpage2}
+\pagestyle{plain}
+\setheadsepline{0.5pt}[\color{black}]
+\automark[section]{chapter}
+
+
+%Einstellungen für Figuren- und Tabellenbeschriftungen
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setcapindent{0em}
+
+
+%---- Weitere Pakete -----------------------------------------------------------
+% Die Pakete sind alle in der TeX Live Distribution enthalten. Wichtige Adressen
+% www.ctan.org, www.dante.de
+
+% Sprachunterstützung
+\usepackage[ngerman]{babel}
+
+% Benutzung von Umlauten direkt im Text
+% entweder "latin1" oder "utf8"
+\usepackage[utf8]{inputenc}
+
+% Pakete mit Mathesymbolen und zur Beseitigung von Schwächen der Mathe-Umgebung
+\usepackage{latexsym,exscale,stmaryrd,amssymb,amsmath}
+
+
+\usepackage[nointegrals]{wasysym}
+\usepackage{eurosym}
+
+% Anderes Literaturverzeichnisformat
+%\usepackage[square,sort&compress]{natbib}
+\usepackage{hyperref}
+% Für Farbe
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+
+% Caption neben Abbildung
+\usepackage{sidecap}
+
+% Befehl für "Entspricht"-Zeichen
+\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
+% Befehl für Errorfunction
+\newcommand{\erf}[1]{\text{ erf}\ensuremath{\left( #1 \right)}}
+
+%Fußnoten zwingend auf diese Seite setzen
+\interfootnotelinepenalty=1000
+
+%Für chemische Formeln (von www.dante.de)
+%% Anpassung an LaTeX(2e) von Bernd Raichle
+%\makeatletter
+%\DeclareRobustCommand{\chemical}[1]{%
+  %{\(\m@th
+  % \edef\resetfontdimens{\noexpand\)%
+   %    \fontdimen16\textfont2=\the\fontdimen16\textfont2
+    %   \fontdimen17\textfont2=\the\fontdimen17\textfont2\relax}%
+ %  \fontdimen16\textfont2=2.7pt \fontdimen17\textfont2=2.7pt
+  % \mathrm{#1}%
+  % \resetfontdimens}}
+%\makeatother
+
+%Honecker-Kasten mit $$\shadowbox{$xxxx$}$$
+\usepackage{fancybox}
+
+%SI-Package
+\usepackage{siunitx}
+
+%H und P Sätze
+\usepackage{ghsystem}
+
+%keine Einrückung, wenn Latex doppelte Leerzeile
+\parindent0pt
+
+%Bibliography \bibliography{literatur} und \cite{gerthsen}
+%\usepackage{cite}
+\usepackage{babelbib}
+\selectbiblanguage{ngerman}
+
+%Römische Zahlen
+\newcommand{\RM}[1]{\MakeUppercase{\romannumeral #1{.}}}
+
+ %Chemische Formeln
+\usepackage{chemformula}
+
+\begin{document}
+
+
+\textbf{K31 trans-Tetraammindinitrocobalt(III)chlorid, [Co(NO2)2(NH3)4]Cl}\\
+
+
+Alea Miako Tokita Platznummer 31\\
+16.05.16\\\\
+\vspace{2cm}
+
+$M_{\ch{NaNO2}} = 69,0~\mathrm{gmol}^{-1} $\\
+$M_{\ch{NH3}} = 17,0~\mathrm{gmol}^{-1} $\\
+$M_{\ch{CoCl2} \cdot 6\ch{H2O}} = 237,8~\mathrm{gmol}^{-1} $\\
+$M_{\ch{[Co(NO2)2(NH3)4]Cl}} = 255,4~\mathrm{gmol}^{-1} $\\
+$M_{\ch{NH4C2O4}} = 124,1~\mathrm{gmol}^{-1} $\\
+$M_{\ch{CH3COOH}} = 60,1~\mathrm{gmol}^{-1} $\\
+$M_{\ch{NH4Cl}} = 53,49 ~\mathrm{gmol}^{-1} $\\\\
+
+\textbf{Durchführung}
+
+In  einem  Zweihalskolben  werden  2,5 g  \ch{NH4Cl}  und  3,5 g  \ch{NaNO2} in  20 mL  Wasser gelöst  und  mit  3 mL  einer  25 \%-igen  \ch{NH3} -Lösung  versetzt.  Nach  Zugabe  einer
+Lösung  von  2.25 g \ch{CoCl2} $\cdot$ 6\ch{H2O}  in  5 mL  Wasser wird  ein  langsamer  Luftstrom durch das Gemisch geleitet. Nach etwa 3 h ist die Reaktion beendet. Die Suspension wird über Nacht stehen gelassen, wobei sich ein Niederschlag absetzt. Dieser wird abgesaugt und so lange mit Wasser gewaschen, bis sich im Waschwasser mit Ammoniumoxalat kein Niederschlag von \ch{[Co(NH3)5(NO2)]C2O4} mehr fällen lässt.\\\\
+Das Rohprodukt wird in heißer 1 M Essigsäure gelöst, ggf. filtriert und mit einer wässrigen  Lösung  von  2 g  \ch{NH4Cl} pro  10 g  Rohprodukt  gefällt.  Nach  Abkühlen und längerem Stehen können die Kristalle abgesaugt, mit Ethanol gewaschen und im Exsikkator über \ch{P4O10} getrocknet werden.\\\\
+
+\textbf{Sicherheitshinweise}\\
+
+\textbf{\ch{NH4Cl}}\\
+\ghs{h}{302}\\
+\ghs{h}{319}\\  
+P280.2-3:2. Geschlossener Laborkittel tragen.
+3. Augenschutz tragen. + je nach Gefahr auch Gesichtsschutz in Erwägung ziehen.\\
+\ghs{p}{301+312}\\ 
+\ghs{p}{305+351+338}\\
+\ghs{p}{337+313}\\
+\ghspic{exclam} \\\\
+
+\textbf{\ch{NaNO2}}\\
+\ghs{h}{272}\\
+\ghs{h}{301}\\
+\ghs{h}{319}\\
+\ghs{h}{400}\\
+\ghs{p}{220}\\
+\ghs{p}{221}\\
+P280.1-3: 1.Geeignete Schutzhandschuhe tragen.
+2. Geschlossener Laborkittel tragen.
+3. Augenschutz tragen. + je nach Gefahr auch Gesichtsschutz in Erwägung ziehen.\\
+\ghs{p}{301+312}\\
+\ghs{p}{305+351+338}\\
+\ghspic{skull}
+\ghspic{flame-O}
+\ghspic{aqpol}\\\\
+
+\textbf{\ch{NH3}}\\
+\ghs{h}{221}\\
+\ghs{h}{280}\\
+\ghs{h}{314}\\
+\ghs{h}{331}\\
+\ghs{h}{400}\\
+\ghs{p}{210}\\
+\ghs{p}{260}\\
+\ghs{p}{273}\\
+P280.1-3+7:1. Geeignete Schutzhandschuhe tragen.
+2. Geschlossener Laborkittel tragen.
+3. Augenschutz tragen. + je nach Gefahr auch Gesichtsschutz in Erwägung ziehen. 
+7. In Abzug/Kapelle arbeiten.
+\ghs{p}{305+351+338}\\
+\ghspic{bottle} \ghspic{skull} \ghspic{aqpol} \ghspic{acid}\\\\
+
+\textbf{\ch{CoCl2} $\cdot$ 6\ch{H2O}}\\
+\ghs{h}{302}\\
+\ghs{h}{317}\\
+\ghs{h}{334}\\
+\ghs{h}{341}\\
+\ghs{h}{350}\\
+\ghs{h}{360F}\\
+\ghs{h}{410}\\  
+\ghs{p}{273}\\
+P280.1-3+5+7: Geeignete Schutzhandschuhe tragen.
+2. Geschlossener Laborkittel tragen.
+3. Augenschutz tragen. + je nach Gefahr auch Gesichtsschutz in Erwägung ziehen.
+5. Staubschutzmaske tragen.  
+7. In Abzug/Kapelle arbeiten.\\
+\ghs{p}{301+312}\\
+\ghspic{exclam} \ghspic{health} \ghspic{aqpol}\\\\
+
+\textbf{\ch{NH4C2O4}}\\
+\ghs{h}{302}\\
+\ghs{h}{312}\\ 
+P280.1-3: 1.Geeignete Schutzhandschuhe tragen.
+2. Geschlossener Laborkittel tragen.
+3. Augenschutz tragen. + je nach Gefahr auch Gesichtsschutz in Erwägung ziehen.\\
+\ghs{p}{301+310}\\
+\ghs{p}{302+352}\\
+\ghspic{exclam}\\\\
+
+\textbf{\ch{CH3COOH}}\\
+\ghs{h}{226}\\
+\ghs{h}{314}\\
+\ghs{h}{210}\\
+\ghs{p}{260}\\
+280.1+3: 1.Geeignete Schutzhandschuhe tragen.
+3. Augenschutz tragen. + je nach Gefahr auch Gesichtsschutz in Erwägung ziehen.\\
+\ghs{p}{303+361+353}\\
+\ghs{p}{304+340}\\
+\ghs{p}{305+351+338}\\
+\ghs{h}{310}\\
+\ghspic{flame} \ghspic{acid}\\\\
+
+\textbf{Literatur}\\
+www.seilnacht.de, abgerufen am 16.05.16\\
+Philipp Kurz, Norbert Stock, Synthetische Anorganische Chemie, Walter-de-Gruyter, Berlin
+2013. 
+
+
+
+\end{document}
